@@ -1,0 +1,11 @@
+---
+ - hosts: loadbalancer
+#   become: true
+   user: iankesh
+   sudo: yes
+   tasks:
+    - name: install nginx
+      apt: name=nginx state=present update_cache=yes    
+
+    - name: ensure nginx started
+      service: name=nginx state=started enabled=yes

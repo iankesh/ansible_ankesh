@@ -1,0 +1,10 @@
+---
+ - hosts: db01
+   user: iankesh
+   vars:
+    welcome_msg: 'Hi. This is Ankesh'	
+   tasks:
+   - name: msg copy
+     copy: 
+      dest: /home/iankesh/copyfile
+      content: "{{ welcome_msg }}"
