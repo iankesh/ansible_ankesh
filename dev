@@ -1,12 +1,12 @@
 [loadbalancer]
-lb01 ansible_ssh_host=172.31.3.96 ansible_user=iankesh
+lb01 ansible_ssh_host=172.31.0.206 ansible_user=iankesh
 
 [webserver]
 app01 ansible_ssh_host=172.31.14.156 ansible_user=iankesh
 app02 ansible_ssh_host=172.31.3.78 ansible_user=iankesh
 
 [database]
-db01 ansible_ssh_host=172.31.8.239 ansible_user=iankesh
+172.31.8.239 ansible_user=iankesh
 
 [control]
 control ansible_connection=local
